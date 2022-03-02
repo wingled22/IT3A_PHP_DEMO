@@ -1,32 +1,34 @@
 <?php
+
     require "db_connect.php";
-?>
 
-<link rel="stylesheet" href="css/site.css">
+    // /*
+    //     saving data
+    // */
+    // $sql = "INSERT INTO book ( Name, Author) VALUES ('Book2','Einstein')";
+    // $res = $conn->query($sql);
+    // if($res)
+    //     echo "data saved";
+    // else 
+    //     echo "error";
 
-<table>
-    <thead>
-        <th>Name</th>
-        <th>Author</th>
-    </thead>
-    <tbody>
-<?php
-    $sql = "SELECT * from book";
-    $res = $conn->query($sql);
+    /*
+        updating data
+    */
+    // $sql = "UPDATE book set Name = 'Updated name', Author= 'Sigmond Frued' Where ID = 15";
+    // $res = $conn->query($sql);
+    // if($res)
+    //     echo "data updated";
+    // else 
+    //     echo "error";
 
-    if(!$res)
-        echo "no data on the the book table";
-
-
-    while($row =mysqli_fetch_object($res)){
-?>
-    <tr>
-        <td><?php echo $row->Name?></td>
-        <td><?php echo $row->Author?></td>
-    </tr>
-<?php
-    }    
-?>
-    </tbody>
-</table>
+    // /*
+    //     deleting data
+    // */
+    // $sql = "DELETE from book where ID = 15";
+    // $res = $conn->query($sql);
+    // if($res)
+    //     echo "data deleted";
+    // else 
+    //     echo "error";
 
