@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkgrey;
+}
+
+.nav{
+    height: 100px;
+    background-color: aquamarine;
+}
+
+
+.content{
+    height: 300px;
+    background-color: burlywood;
+}
+
+
+.footer{
+    height: 100px;
+    background-color: coral;
+}
