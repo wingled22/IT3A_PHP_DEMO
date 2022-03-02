@@ -3,6 +3,7 @@
     require "../db_connect.php";
     
     if($_GET){
+
         $sql = "INSERT INTO book (Name, Author) values ('".$_GET['Name']."', '".$_GET['Author']."')";
         $res  = $conn->query($sql);
         if($res)
@@ -12,6 +13,8 @@
     }
 
  ?>
+
+
 
 <form action="" method="get">
     <label for="Name">Enter Book Name</label>
